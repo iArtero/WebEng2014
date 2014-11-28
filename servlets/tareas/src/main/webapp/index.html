@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Tareas</title>
+</head>
+<body>
+	<h1>Tareas</h1>
+	<table>
+		<tr>
+			<td valign="top">
+				<table >
+					<tr>
+							<form method="get" action="buscar">
+								<fieldset>
+									<legend>Buscar Tarea:</legend>
+										<input type="text" name="text">
+										<select name="opcion">
+											 <option value="task">Task</option>
+											 <option value="context">Context</option>
+											 <option value="project">Project</option>
+											 <option value="priority">Priority</option>
+										</select>
+										<input type="submit" value="Buscar">
+								</fieldset>
+							</form>
+										
+							<form method="get" action="insert">
+								<fieldset>
+									<legend>Introducir Tarea:</legend>
+										Task: <br><input type="text" name="task"><br> 
+										Context: <br><input type="text" name="context"><br> 
+										Project: <br><input type="text" name="project"><br> 
+										Priority: <br><input type="number" name="priority"value="0"><br> 
+										<input type="submit" value="Introducir">
+								</fieldset>
+							</form>
+					</tr>
+				</table>
+			</td>
+			<td>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
