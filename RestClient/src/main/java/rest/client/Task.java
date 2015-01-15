@@ -1,12 +1,13 @@
-package formats.json;
+package rest.client;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.net.URI;
 
 public class Task {
+	
 	private String task, context, project;
 	private int priority;
-
+	
+	
 	public String getTask() {
 		return task;
 	}
@@ -31,7 +32,5 @@ public class Task {
 	public void setPriority(int priority) {
 		this.priority = priority;
 	}
-	
-	
 
 }

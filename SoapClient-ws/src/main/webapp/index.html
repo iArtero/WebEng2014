@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Tareas</title>
+</head>
+<body>
+	<h1>Tareas</h1>
+	<table>
+		<tr>
+			
+					<td>
+																
+							<form method="post" action="Cliente">
+								<fieldset>
+									<legend>Introducir Tarea:</legend>
+										Opcion: <br>
+										<select name="opcion">
+											<option value="agregar">Agregar Tarea</option>
+											<option value="borrar">Borrar Tarea</option>
+										</select> <br>
+										Task: <br><input type="text" name="task"><br> 
+										Context: <br><input type="text" name="context"><br> 
+										Project: <br><input type="text" name="project"><br> 
+										Priority: <br><input type="number" name="priority"value="0"><br> 
+										<input type="submit" value="Introducir">
+										(En caso de borrar una tarea, basta con introducir el nombre de esta)
+								</fieldset>
+							</form>
+					</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+			</tr>
+	</table>
+</body>
+</html>

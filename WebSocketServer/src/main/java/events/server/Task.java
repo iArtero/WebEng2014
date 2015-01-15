@@ -1,7 +1,6 @@
-package formats.json;
+package events.server;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.net.URI;
 
 public class Task {
 	private String task, context, project;
@@ -32,6 +31,4 @@ public class Task {
 		this.priority = priority;
 	}
 	
-	
-
 }

@@ -1,11 +1,11 @@
-package formats.json;
+package rest.server;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.net.URI;
 
 public class Task {
 	private String task, context, project;
 	private int priority;
+	private URI href;
 
 	public String getTask() {
 		return task;
@@ -31,7 +31,11 @@ public class Task {
 	public void setPriority(int priority) {
 		this.priority = priority;
 	}
+	public void setHref(URI href) {
+		this.href = href;
+	}
 	
-	
-
+	public URI getHref() {
+		return href;
+	}
 }

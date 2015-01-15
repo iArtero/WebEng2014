@@ -8,6 +8,6 @@ public class HelloWebService {
 	
 	@WebMethod()
 	public String sayHello(String name) {
-		return "Hello "+name +"!";
+		return ""+name +"!";
 	}
 }

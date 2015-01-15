@@ -7,13 +7,15 @@ repositories {
 }
 
 dependencies {
-   compile "com.sun.xml.ws:jaxws-rt:2.2.8"
    	compile 'com.google.code.gson:gson:2.3'
+
+	compile 'org.glassfish.tyrus:tyrus-container-grizzly-server:1.8.3'
 }
 
 task server(type: JavaExec) {
-    group 			= 'ToDo Service'
-    description 	= 'Start a SOAP endpoint'
-    main 			= 'soap.server.Server'
+	standardInput 	= System.in  
+    group 			= 'Hello Websockets Service'
+    description 	= 'Start a Websocket endpoint'
+    main 			= 'events.server.WebSocketServer'
 	classpath 		= sourceSets.main.runtimeClasspath
 }

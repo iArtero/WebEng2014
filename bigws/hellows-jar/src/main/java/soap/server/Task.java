@@ -1,7 +1,4 @@
-package formats.json;
-
-import java.util.ArrayList;
-import java.util.List;
+package soap.server;
 
 public class Task {
 	private String task, context, project;
@@ -32,6 +29,4 @@ public class Task {
 		this.priority = priority;
 	}
 	
-	
-
 }
